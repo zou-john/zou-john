@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,  // Required for static export
   },
   trailingSlash: true,  // Add trailing slashes to all routes
-  basePath: '/zou-john',  // Your GitHub Pages repository name
-  assetPrefix: '/zou-john/',  // Your GitHub Pages repository name
+  basePath: process.env.NODE_ENV === 'production' ? '/zou-john' : '',  // Only add basePath in production
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/zou-john/' : '',  // Only add assetPrefix in production
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig;

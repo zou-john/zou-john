@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/zou-john' : '',
-  assetPrefix: isProd ? '/zou-john/' : '',
+  output: 'export', // This enables static export
+  basePath: '/zou-john', // if your repo name is 'zou-john'
 };
 
 module.exports = nextConfig;
