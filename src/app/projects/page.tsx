@@ -4,17 +4,17 @@ const projects = [
   {
     title: "Project 1",
     description: "#1",
-    imageUrl: "/1.jpg",
+    imageUrl: "/zou-john/1.jpg",
   },
   {
-    title: "Machine Learning Internship",
-    description: "Working at Ericsson as a machine learning intern, developing and implementing ML solutions for telecommunications applications.",
-    imageUrl: "/2.jpg",
+    title: "Project 2",
+    description: "#2",
+    imageUrl: "/zou-john/2.jpg",
   },
   {
-    title: "Personal Portfolio",
-    description: "A modern, responsive portfolio website built with Next.js and Tailwind CSS, showcasing my projects and experience.",
-    imageUrl: "/profolio.webp",
+    title: "Project 3",
+    description: "#3",
+    imageUrl: "/zou-john/3.jpg",
   },
 ];
 

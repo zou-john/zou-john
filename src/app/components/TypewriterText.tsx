@@ -12,7 +12,7 @@ export default function TypewriterText({ text, delay = 100 }: TypewriterTextProp
   const [displayText, setDisplayText] = useState('');
   const pathname = usePathname();
   
-  const fullText = text || (pathname === '/blog/linear-regression' ? "linear-regression" : pathname.slice(1));
+  const fullText = text || (pathname === '/blog/linear-regression' ? "linear-regression" : pathname.slice(1).replace(/\/$/, ''));
   const typingSpeed = delay || 100;
 
   useEffect(() => {
