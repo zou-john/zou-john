@@ -12,17 +12,7 @@ export default function TypewriterText({ text, delay = 100 }: TypewriterTextProp
   const [displayText, setDisplayText] = useState('');
   const pathname = usePathname();
   
-  // Special case for blog post
-  if (pathname === '/blog/linear-regression') {
-    return (
-      <span className="text-gray-200 font-mono">
-        blog/<TypewriterEffect text="linear-regression" delay={delay} />
-      </span>
-    );
-  }
-
-  // For all other cases, use the text prop
-  const fullText = text || pathname.slice(1);
+  const fullText = text || (pathname === '/blog/linear-regression' ? "linear-regression" : pathname.slice(1));
   const typingSpeed = delay || 100;
 
   useEffect(() => {
