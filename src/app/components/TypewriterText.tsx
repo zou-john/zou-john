@@ -45,35 +45,3 @@ export default function TypewriterText({ text, delay = 100 }: TypewriterTextProp
     </span>
   );
 }
-
-// Separate component for the typing effect
-function TypewriterEffect({ text, delay = 100 }: { text: string; delay?: number }) {
-  const [displayText, setDisplayText] = useState('');
-  const typingSpeed = delay || 100;
-
-  useEffect(() => {
-    let currentIndex = 0;
-    let timeout: NodeJS.Timeout;
-
-    const type = () => {
-      if (currentIndex < text.length) {
-        setDisplayText(text.substring(0, currentIndex + 1));
-        currentIndex++;
-        timeout = setTimeout(type, typingSpeed);
-      }
-    };
-
-    // Reset and start typing
-    setDisplayText('');
-    currentIndex = 0;
-    type();
-
-    return () => {
-      if (timeout) {
-        clearTimeout(timeout);
-      }
-    };
-  }, [text, typingSpeed]);
-
-  return <>{displayText}</>;
-} 
