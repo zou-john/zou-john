@@ -4,17 +4,17 @@ const projects = [
   {
     title: "Project 1",
     description: "#1",
-    imageUrl: "/zou-john/1.jpg",
+    imageUrl: "/1.jpg",
   },
   {
     title: "Project 2",
     description: "#2",
-    imageUrl: "/zou-john/2.jpg",
+    imageUrl: "/2.jpg",
   },
   {
     title: "Project 3",
     description: "#3",
-    imageUrl: "/zou-john/3.jpg",
+    imageUrl: "/3.jpg",
   },
 ];
 

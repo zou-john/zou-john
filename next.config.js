@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,  // Required for static export
   },
   trailingSlash: true,  // Add trailing slashes to all routes
-  basePath: '/zou-john',  // Replace with your GitHub repository name
-  assetPrefix: '/zou-john/',  // Replace with your GitHub repository name
+  basePath: '/zou-john.github.io',  // Your GitHub Pages site
+  assetPrefix: '/zou-john.github.io/',  // Your GitHub Pages site
 }
 
 module.exports = nextConfig 
