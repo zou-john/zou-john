@@ -2,6 +2,7 @@
   "name": "john-zou-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zou-john.github.io/zou-john",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
